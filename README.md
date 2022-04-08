@@ -11,9 +11,10 @@ Extremely high performance Monero (XMR) Stratum protocol proxy, can easily handl
 ## Compatibility
 :warning: :warning: :warning: **Nicehash support must be enabled on miner side, it mandatory.** :warning: :warning: :warning:
 
-* Compatible with any Monero, Electroneum, Sumokoin and AEON pools, except **nicehash.com**.
+* Compatible with any Monero, Electroneum, Sumokoin, Scala and AEON pools, except **nicehash.com**.
 * Any miner with nicehash support, `--nicehash` option for [XMRig](https://github.com/xmrig/xmrig), `"nicehash_nonce": true,` for xmr-stak-cpu.
 * [Comparison](https://github.com/xmrig/xmrig-proxy/wiki/Comparison) with other proxies.
+* Added Scala with panthera support
 
 ## Why?
 This proxy designed and created for handle donation traffic from XMRig. No one other solution works fine with high connection/disconnection rate.
