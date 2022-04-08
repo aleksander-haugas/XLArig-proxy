@@ -101,6 +101,13 @@ const char *Algorithm::kKAWPOW          = "kawpow";
 const char *Algorithm::kKAWPOW_RVN      = "kawpow";
 #endif
 
+#ifdef XMRIG_ALGO_CN_GPU
+const char *Algorithm::kCN_GPU          = "cn/gpu";
+#endif
+
+#ifdef XMRIG_ALGO_RANDOMX
+const char *Algorithm::kRX_XLA          = "panthera";
+#endif
 
 #define ALGO_NAME(ALGO)         { Algorithm::ALGO, Algorithm::k##ALGO }
 #define ALGO_ALIAS(ALGO, NAME)  { NAME, Algorithm::ALGO }
@@ -163,6 +170,14 @@ static const std::map<uint32_t, const char *> kAlgorithmNames = {
 #   ifdef XMRIG_ALGO_KAWPOW
     ALGO_NAME(KAWPOW_RVN),
 #   endif
+    
+#   ifdef XMRIG_ALGO_CN_GPU
+    ALGO_NAME(CN_GPU),
+#   endif
+
+#   ifdef XMRIG_ALGO_RANDOMX
+    ALGO_NAME(RX_XLA),
+#   endif    
 };
 
 
@@ -278,6 +293,15 @@ static const std::map<const char *, Algorithm::Id, aliasCompare> kAlgorithmAlias
 #   ifdef XMRIG_ALGO_KAWPOW
     ALGO_ALIAS_AUTO(KAWPOW_RVN),    ALGO_ALIAS(KAWPOW_RVN,      "kawpow/rvn"),
 #   endif
+    
+#   ifdef XMRIG_ALGO_CN_GPU
+    ALGO_ALIAS_AUTO(CN_GPU),        ALGO_ALIAS(CN_GPU,          "cryptonight/gpu"),
+                                    ALGO_ALIAS(CN_GPU,          "cryptonight_gpu"),
+#   endif
+
+#   ifdef XMRIG_ALGO_RANDOMX
+    ALGO_ALIAS_AUTO(RX_XLA),        ALGO_ALIAS(RX_XLA,          "Panthera"),
+#   endif    
 };
 
 
@@ -348,7 +372,7 @@ std::vector<xmrig::Algorithm> xmrig::Algorithm::all(const std::function<bool(con
         CN_LITE_0, CN_LITE_1,
         CN_HEAVY_0, CN_HEAVY_TUBE, CN_HEAVY_XHV,
         CN_PICO_0, CN_PICO_TLO,
-        CN_UPX2,
+        CN_UPX2, RX_XLA,
         RX_0, RX_WOW, RX_ARQ, RX_GRAFT, RX_SFX, RX_KEVA,
         AR2_CHUKWA, AR2_CHUKWA_V2, AR2_WRKZ,
         ASTROBWT_DERO,
