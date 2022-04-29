@@ -33,7 +33,4 @@ Default donation fee is 0% in the official pool and can be 1% in unofficial pool
 * XMR (Original Dev): `48edfHu7V9Z84YzzMa6fUueoELZ9ZRXq9VetWzYGzKt52XU5xvqgzYnDK9URnRoJMk1j8nLwEVsaSWJ4fhdUyZijBGUicoD`
 * XLA (Me) : `Ssy2AQ13Kf1cSJoqZ5Hkvd8RzDFmsWXu5XTe55qPADfFAHp37P7ioDXTU5d6uNb89368PRnxeb9rgjWsChs7BcV52M2jnRaqkV`
 
-## Contacts
-* support@xmrig.com
-* [reddit](https://www.reddit.com/user/XMRig/)
-* [twitter](https://twitter.com/xmrig_dev)
+
