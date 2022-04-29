@@ -1,4 +1,5 @@
 # v6.15.1
+- [#2587](https://scalaproject.io) Panthera support for scala XLA. 
 - [#2586](https://github.com/xmrig/xmrig/pull/2586) Fixed Windows 7 compatibility.
 
 # v6.15.0
